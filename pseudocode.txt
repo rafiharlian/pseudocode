@@ -1,0 +1,56 @@
+gaya pada sebuah mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga 
+orang percepatannya adalah 2 m/s2!
+
+STORE "massa" with VALUE 600
+STORE "percepatan" with VALUE 2
+STORE "gaya" EQUAL TO "massa" TIMES "percepatan"
+DISPLAY "gaya" 
+
+
+Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
+Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+
+STORE "tahun" with any VALUE
+    IF "tahun" MOD 4 EQUAL TO 0 AND "tahun" MOD 100 EQUAL TO 0 THEN
+    DISPLAY "kabisat"
+    ELSE IF "tahun" MOD 4 EQUAL TO 0 AND "tahun" MOD 100 EQUAL TO 0 AND "tahun" MOD 400 EQUAL TO 0
+    DISPLAY "kabisat"
+    ELSE 
+    DISPLAY "tidak kabisat"
+
+
+
+masukkan 20 pakaian ke mesin cuci
+Mesin cuci menyala
+mengulangi
+
+STORE "pakaian" with 0
+STORE "maxpakaian" with 20
+    WHILE "pakaian" LOWER TO "maxpakaian" THEN
+    DISPLAY "mesin cuci mati"
+    ADD "pakaian" by 1
+END WHILE
+DISPLAY "mesin cuci menyala" 
+
+
+Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan cara berkeliling
+kelas. Jika guru menemukan siswa/siswi yang memiliki kuku yang panjang maka guru akan 
+menghukum siswa/siswi tersebut, jika tidak guru akan memuji siswa/siswi tersebut.
+
+STORE "siswa siswi" with 0
+STORE "total siswa" with 40
+STORE "kuku" with VALUE "panjang" OR "pendek"
+
+WHILE "siswa siswi" LOWER TO 40
+IF "kuku" EQUAL TO "panjang" THEN 
+DISPLAY "guru menghukum"
+ADD "siswa siswi" by 1
+ELSE IF "kuku" EQUAL TO "pendek" THEN
+DISPLAY "guru memuji"
+ADD "siswa siswi" by 1
+
+END WHILE
+
+
+
+
